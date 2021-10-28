@@ -16,12 +16,13 @@ test('TestToEqual sort hero', () => {
 });
 
 test.each([
-  [{name: 'маг', health: 100}, 100],
-  [{name: 'лучник', health: 80}, 80],
-  [{name: 'мечник', health: 10}, 10],
+  [{ name: 'маг', health: 100 }, 100],
+  [{ name: 'лучник', health: 80 }, 80],
+  [{ name: 'мечник', health: 10 }, 10],
 ])(
   ('TestToBe sort hero'),
   (object, expected) => {
-  const resalt = sortHero(object);
-  expect(resalt).toBe(expected);
-});
+    const resalt = sortHero(object);
+    expect(resalt).toBe(expected);
+  }
+  );
