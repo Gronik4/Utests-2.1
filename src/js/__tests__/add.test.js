@@ -24,5 +24,5 @@ test.each([
   (object, expected) => {
     const resalt = sortHero(object);
     expect(resalt).toBe(expected);
-  }
+  },
 );
