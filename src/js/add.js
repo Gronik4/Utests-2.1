@@ -5,7 +5,6 @@ export default function sortHero(array) {
       return a;
     });
     return array;
-  } else {
-    return array.health;
-  }
+  } 
+  return array.health;
 }

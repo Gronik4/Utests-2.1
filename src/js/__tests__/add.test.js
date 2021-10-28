@@ -25,4 +25,4 @@ test.each([
     const resalt = sortHero(object);
     expect(resalt).toBe(expected);
   }
-  );
+);
