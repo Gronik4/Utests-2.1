@@ -9,7 +9,7 @@ const expected = [
   { name: 'маг', health: 100 },
   { name: 'лучник', health: 80 },
   { name: 'мечник', health: 10 },
-]
+];
 
 test('TestToEqual sort hero', () => {
   const resalt = sortHero(array1);
@@ -17,7 +17,6 @@ test('TestToEqual sort hero', () => {
 });
 
 test.each('TestToBe sort hero', () => {
-    const resalt = sortHero(object);
-    expect(resalt).toBe(expected);
+  const resalt = sortHero(object);
+  expect(resalt).toBe(array1);
 });
-
