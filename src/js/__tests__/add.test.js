@@ -16,7 +16,7 @@ test('TestToEqual sort hero', () => {
   expect(resalt).toEqual(expected);
 });
 
-test.each('TestToBe sort hero', () => {
+test('TestToBe sort hero', () => {
   const resalt = sortHero(array1);
-  expect(resalt).toBe(expected);
+  expect(resalt).not.toBe(expected);
 });
